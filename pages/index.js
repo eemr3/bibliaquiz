@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import styled from 'styled-components'
 
 import Footer from '../src/components/Footer'
@@ -20,6 +22,10 @@ export const QuizContanier = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Bíblia Quiz</title>
+        <meta property="og:image" content={db.bg} />
+      </Head>
       <QuizContanier>
         <Widget>
           <Widget.Header>

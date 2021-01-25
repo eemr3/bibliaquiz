@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head'
 
 import styled from 'styled-components'
@@ -6,6 +7,7 @@ import Footer from '../src/components/Footer'
 import { Widget } from '../src/components/Widget'
 import QuizBackground from '../src/components/QuizBackground'
 import GitHubCorner from '../src/components/GitHubCorner'
+
 import db from '../db.json'
 
 export const QuizContanier = styled.div`
@@ -17,6 +19,16 @@ export const QuizContanier = styled.div`
     margin: auto;
     padding: 15px;
   }
+`
+const Button = styled.a`
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  border-radius: 4px;
+  cursor: pointer;
 `
 
 export default function Home() {
@@ -34,7 +46,11 @@ export default function Home() {
           <Widget.Content>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </Widget.Content>
+          <Link href="/quiz">
+            <Button>Vamos começar</Button>
+          </Link>
         </Widget>
+
         <Widget>
           <Widget.Content>
             <h2>Quiz da Galera</h2>

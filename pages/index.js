@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Head from 'next/head'
 
 import styled from 'styled-components'
 
@@ -34,10 +33,6 @@ const Button = styled.a`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>Bíblia Quiz</title>
-        <meta property="og:image" content={db.bg} />
-      </Head>
       <QuizContanier>
         <Widget>
           <Widget.Header>

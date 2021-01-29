@@ -5,24 +5,132 @@
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "title": "Quantas pragas foram enviadas ao Egito?",
+      "description": "Encontra-se no livro de Gêneses",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "7 Pragas",
+        "3 Pragas",
+        "9 pragas",
+        "10 Pragas",
+        "15 pragas"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "title": "Quem foi lançado na cova dos leões?",
+      "description": "Encontra-se no livro de Daniel",
+      "answer": 2,
+      "alternatives": [
+        "Paulo",
+        "José",
+        "Daniel",
+        "Jonas",
+        "Isaque"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Qual instrumento Davi gostava de tocar?",
+      "description": "Encontra-se no livro de 1 Samuel",
+      "answer": 4,
+      "alternatives": [
+        "Tambor",
+        "Flauta",
+        "Violão",
+        "Shofar",
+        "Harpa"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quando Jesus nasceu, onde Ele foi colocado?",
+      "description": "Encontra-se no livro de Lucas",
+      "answer": 1,
+      "alternatives": [
+        "Foi colocado em uma cama.",
+        "Foi colocado em uma manjedoura.",
+        "Foi colocado em um trono.",
+        "Foi colocado em forro no chão",
+        "foi colocado eu berço"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quando a mulher com fluxo de sangue tocou nas vestes de Jesus, no que ela pensava?",
+      "description": "Encontra-se no livro de Marcos",
       "answer": 0,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Se eu tão somente tocar em seu manto, ficarei curada.",
+        "Tenho que chamar a atenção de Jesus para ser curada",
+        "Tenho que interromper o caminho de Jesus",
+        "Tenho que pedir a um dos seus dicípulos",
+        "Tenho que chegar perto de sua sombra para ser curada"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Na parábola do semeador, quais sementes que cresceram e deram uma boa colheita?",
+      "description": "Encontra-se no livro de Mateus",
+      "answer": 2,
+      "alternatives": [
+        "As sementes que caíram nas pedras.",
+        "As sementes que caíram entre os espinhos.",
+        "As sementes que caíram em boa terra.",
+        "As sementes que cairam em terra arada",
+        "As sementes que cairam em um jardim"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Jesus comparou o Reino de Deus a qual semente?",
+      "description": "Encontra-se no livro de Marcos",
+      "answer": 0,
+      "alternatives": [
+        "Ao grão de mostarda.",
+        "Ao grão de milho.",
+        "A semente de uva.",
+        "A semente de maçã",
+        "A semente de laranja"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quem são conhecidos como os patriarcas na Bíblia?",
+      "description": "Encontra-se no VT e NT",
+      "answer": 2,
+      "alternatives": [
+        "Jesus, Maria e José",
+        "Pedro, João e Tiago",
+        "Abraão, Isaque e Jacó",
+        "Moisés, Josué, Davi",
+        "Solomão, Isaias, Jeremias"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": "Quem ensinou os discípulos a oração do Pai nosso?",
+      "description": "Encontra-se no livro de Mateus",
+      "answer": 3,
+      "alternatives": [
+        "Os fariseus",
+        "Paulo",
+        "Pedro",
+        "Jesus",
+        "João"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "title": " Quem foi o 'assistente' do profeta Elias?",
+      "description": "Encontra-se no livro de 1 Reis",
+      "answer": 0,
+      "alternatives": [
+        "Eliseu",
+        "Enoque",
+        "Jonas",
+        "Ezequias",
+        "Jonas"
       ]
     }
   ],

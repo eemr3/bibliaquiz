@@ -1,36 +1,52 @@
 import { useEffect, useState } from 'react'
-import db from '../db.json'
+import db from '../../db.json'
+import { Lottie } from '@crello/react-lottie'
 
-import QuizBackground from '../src/components/QuizBackground'
-import QuizContainer from '../src/components/QuizContainer'
-import QuizLogo from '../src/components/QuizLogo'
-import Button from '../src/components/Button'
-import { Widget } from '../src/components/Widget'
-import AlternativesForm from '../src/components/AlternativesForm'
+import QuizBackground from '../../src/components/QuizBackground'
+import QuizContainer from '../../src/components/QuizContainer'
+import QuizLogo from '../../src/components/QuizLogo'
+import Button from '../../src/components/Button'
+import { Widget } from '../../src/components/Widget'
+import AlternativesForm from '../../src/components/AlternativesForm'
+import BlackLinkArrow from '../../src/components/BackLinkArrow'
+import animationData from '../../src/screen/Quiz/Lotties/loading.json'
+import { useRouter } from 'next/router'
+
+function ResultgWidget({ results }) {
+  const router = useRouter()
+  const { name } = router.query
+  const correctsAnswers = results.filter((x) => x).length
+  const score = correctsAnswers * 10
+
+  return (
+    <Widget>
+      <Widget.Header>Resultado</Widget.Header>
+      <Widget.Content>
+        <p>
+          Olá {name} você acertou {correctsAnswers} pergutas!
+        </p>
+        <p>E conseguiu {score} pontos.</p>
+      </Widget.Content>
+    </Widget>
+  )
+}
 
 function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>Carregando...</Widget.Header>
-      <Widget.Content>[Desafio do Loading]</Widget.Content>
-    </Widget>
-  )
-}
 
-function ResultgWidget({ results }) {
-  return (
-    <Widget>
-      <Widget.Header>Resultado</Widget.Header>
-      <Widget.Content>
-        <p>Você acertou {results.filter((x) => x).length} pergutas</p>
-        <ul>
-          {results.map((item, index) => (
-            <li key={index}>
-              Resultado:
-              {item === true ? 'Acertou' : 'Errou'}
-            </li>
-          ))}
-        </ul>
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{
+            animationData: animationData,
+            loop: true,
+            autoplay: true,
+          }}
+        />
       </Widget.Content>
     </Widget>
   )
@@ -63,7 +79,7 @@ const QuestionWidget = ({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BlackLinkArrow href='/' /> */}
+        <BlackLinkArrow href="/" />
 
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>

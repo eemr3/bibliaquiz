@@ -1,7 +1,7 @@
 {
   "bg": "https://i.ibb.co/WkHPQyX/people-2604837-1920.jpg",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Quiz Conhecimento Biblico",
+  "description": "Teste os seus conhecimentos sobre a Bíblia e vamos ver o quantos você sabe da palavra de Deus",
   "questions": [
     {
       "image": "https://i.ibb.co/9yzvMY4/piramides-de-guize-7915.jpg",
@@ -135,7 +135,13 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://imersao-react-alura.malufell.vercel.app/",
+    "https://internet-quiz.johnmaroeli.vercel.app/",
+    "https://doctor-who-quiz.emanuelpna.vercel.app/",
+    "https://biblequiz.epsilveira.vercel.app/",
+    "https://alura-quiz-avengers.fernanda-kipper.vercel.app/",
+    "https://bibliaquiz.prscreis.vercel.app/"
   ],
   "theme": {
     "colors": {

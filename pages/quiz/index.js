@@ -149,7 +149,7 @@ function QuizPage() {
   useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ)
-    }, 1 * 1000)
+    }, 1 * 4000)
   }, [])
 
   function handleSubmitQuiz() {

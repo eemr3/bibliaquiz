@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import db from '../../db.json'
 import { Lottie } from '@crello/react-lottie'
 
@@ -25,7 +26,14 @@ function ResultgWidget({ results }) {
         <p>
           Olá {name} você acertou {correctsAnswers} pergutas!
         </p>
-        <p>E conseguiu {score} pontos.</p>
+        {score >= 50 ? (
+          <p style={{ fontSize: '18px' }}>Você fez {score} pontos, parabéns!</p>
+        ) : (
+          <p style={{ fontSize: '18px' }}>
+            Oh não, você fez {score} pontos, tente novamente e melhore o seu
+            resultado!
+          </p>
+        )}
       </Widget.Content>
     </Widget>
   )
@@ -120,8 +128,26 @@ const QuestionWidget = ({
           <Button type="submit" disabled={!hasSelectedAlternative}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && (
+            <p style={{ textAlign: 'center' }}>
+              <Image
+                src="/correct.svg"
+                alt="Imagem de acertou"
+                width={43}
+                height={43}
+              />
+            </p>
+          )}
+          {isQuestionSubmited && !isCorrect && (
+            <p style={{ textAlign: 'center' }}>
+              <Image
+                src="/error.svg"
+                width={43}
+                height={43}
+                alt="Imagem de erro"
+              />
+            </p>
+          )}
         </AlternativesForm>
       </Widget.Content>
     </Widget>

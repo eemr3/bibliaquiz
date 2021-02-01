@@ -107,7 +107,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContanier>
-      <GitHubCorner projectUrl="https://github.com/eemr3" />
+      <GitHubCorner projectUrl="https://github.com/eemr3/bibliaquiz" />
     </QuizBackground>
   )
 }
